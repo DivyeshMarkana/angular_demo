@@ -1,0 +1,18 @@
+<div class="movies">
+    <h3>Movies to Watch</h3>
+    <!-- <ul>
+       <li>{{ movies[0] }}</li>
+       <li>{{ movies[1] }}</li>
+       <li>{{ movies[2] }}</li>
+       <li>{{ movies[3] }}</li>
+    </ul> -->
+    <ul>
+       <li *ngFor="let movie of movies">{{movie}}</li>
+    </ul>
+    <hr>
+
+    
+    <input #newMovie (keyup.enter)="addMovie(newMovie.value); newMovie.value = ''" type="text" id="movieItem" placeholder="Enter movie name">
+    <button (click)='addMovie(newMovie.value); newMovie.value = ""'>Add</button>
+    
+ </div>

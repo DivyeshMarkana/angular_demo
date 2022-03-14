@@ -1,0 +1,10 @@
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* .socialLinks > *{
+padding: 5px;
+} */

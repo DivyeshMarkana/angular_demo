@@ -1,0 +1,25 @@
+body {
+    width: 100vw;
+}
+
+h1 {
+    color: aqua;
+}
+
+.taskList {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+}
+
+.taskList > * {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: 2px dashed gray;
+}
+
+.taskList > *:last-child{
+    border-right: 2px dashed gray;
+    /* background-color: aqua; */
+}
